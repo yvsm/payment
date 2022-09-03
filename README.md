@@ -19,8 +19,6 @@
 
 # 公告
 
-第三方支付的一些重要更新提示，以及项目相关的计划信息。
-
 本源码基于 https://github.com/helei112g/payment 做了细微修改，仅为了方便packagist拉取。
 
 
