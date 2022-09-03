@@ -7,8 +7,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Leo",
-            "email": "dayugog@gmail.com",
+            "name": "yvsm",
+            "email": "yvsm@163.com",
             "homepage": "https://www.zunyunkeji.com"
         }
     ],
@@ -26,6 +26,6 @@
         "codeception/codeception": "*"
     },
     "autoload": {
-        "psr-4": {"Payment\\": "src/"}
+        "psr-4": {"zunyunkeji\\Payment\\": "src/"}
     }
 }
