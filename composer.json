@@ -26,6 +26,6 @@
         "codeception/codeception": "*"
     },
     "autoload": {
-        "psr-4": {"zunyunkeji\\Payment\\": "src/"}
+        "psr-4": {"zunyunkeji\\payment\\": "src/"}
     }
 }
