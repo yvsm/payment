@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Helpers;
+namespace zunyunkeji\payment\Helpers;
 
 /**
  * Class DataParser

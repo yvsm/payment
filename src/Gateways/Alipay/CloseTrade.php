@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Gateways\Alipay;
+namespace zunyunkeji\payment\Gateways\Alipay;
 
-use Payment\Contracts\IGatewayRequest;
-use Payment\Exceptions\GatewayException;
-use Payment\Helpers\ArrayUtil;
-use Payment\zunyunkeji\payment;
+use zunyunkeji\payment\Contracts\IGatewayRequest;
+use zunyunkeji\payment\Exceptions\GatewayException;
+use zunyunkeji\payment\Helpers\ArrayUtil;
+use zunyunkeji\payment\zunyunkeji\payment;
 
 /**
  * @package Payment\Gateways\Alipay

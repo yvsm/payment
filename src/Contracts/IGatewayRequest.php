@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Contracts;
+namespace zunyunkeji\payment\Contracts;
 
-use Payment\Exceptions\GatewayException;
+use zunyunkeji\payment\Exceptions\GatewayException;
 
 /**
  * @package Payment\Contracts

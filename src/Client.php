@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment;
+namespace zunyunkeji\payment;
 
 use InvalidArgumentException;
-use Payment\Contracts\IPayNotify;
-use Payment\Exceptions\ClassNotFoundException;
-use Payment\Exceptions\GatewayException;
-use Payment\Proxies\CMBankProxy;
-use Payment\Supports\ProxyFactory;
+use zunyunkeji\payment\Contracts\IPayNotify;
+use zunyunkeji\payment\Exceptions\ClassNotFoundException;
+use zunyunkeji\payment\Exceptions\GatewayException;
+use zunyunkeji\payment\Proxies\CMBankProxy;
+use zunyunkeji\payment\Supports\ProxyFactory;
 
 /**
  * @package Payment

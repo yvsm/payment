@@ -9,26 +9,26 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Proxies;
+namespace zunyunkeji\payment\Proxies;
 
 use InvalidArgumentException;
-use Payment\Contracts\IGatewayRequest;
-use Payment\Contracts\IPayNotify;
-use Payment\Contracts\IPayProxy;
-use Payment\Contracts\IQueryProxy;
-use Payment\Contracts\ITransferProxy;
-use Payment\Exceptions\GatewayException;
-use Payment\Gateways\Alipay\Bill;
-use Payment\Gateways\Alipay\CancelTrade;
-use Payment\Gateways\Alipay\CloseTrade;
-use Payment\Gateways\Alipay\Notify;
-use Payment\Gateways\Alipay\Refund;
-use Payment\Gateways\Alipay\RefundQuery;
-use Payment\Gateways\Alipay\TradeQuery;
-use Payment\Gateways\Alipay\Transfer;
-use Payment\Gateways\Alipay\TransferQuery;
-use Payment\zunyunkeji\payment;
-use Payment\Supports\BaseObject;
+use zunyunkeji\payment\Contracts\IGatewayRequest;
+use zunyunkeji\payment\Contracts\IPayNotify;
+use zunyunkeji\payment\Contracts\IPayProxy;
+use zunyunkeji\payment\Contracts\IQueryProxy;
+use zunyunkeji\payment\Contracts\ITransferProxy;
+use zunyunkeji\payment\Exceptions\GatewayException;
+use zunyunkeji\payment\Gateways\Alipay\Bill;
+use zunyunkeji\payment\Gateways\Alipay\CancelTrade;
+use zunyunkeji\payment\Gateways\Alipay\CloseTrade;
+use zunyunkeji\payment\Gateways\Alipay\Notify;
+use zunyunkeji\payment\Gateways\Alipay\Refund;
+use zunyunkeji\payment\Gateways\Alipay\RefundQuery;
+use zunyunkeji\payment\Gateways\Alipay\TradeQuery;
+use zunyunkeji\payment\Gateways\Alipay\Transfer;
+use zunyunkeji\payment\Gateways\Alipay\TransferQuery;
+use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Supports\BaseObject;
 
 /**
  * @package Payment\Proxys

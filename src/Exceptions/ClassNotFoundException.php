@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Exceptions;
+namespace zunyunkeji\payment\Exceptions;
 
 /**
  * @package Payment\Exceptions

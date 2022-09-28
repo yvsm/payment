@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Supports;
+namespace zunyunkeji\payment\Supports;
 
 /**
  * @package Payment

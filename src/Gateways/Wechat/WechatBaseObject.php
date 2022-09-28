@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Gateways\Wechat;
+namespace zunyunkeji\payment\Gateways\Wechat;
 
-use Payment\Exceptions\GatewayException;
-use Payment\Helpers\ArrayUtil;
-use Payment\Helpers\DataParser;
-use Payment\Helpers\StrUtil;
-use Payment\zunyunkeji\payment;
-use Payment\Supports\BaseObject;
-use Payment\Supports\HttpRequest;
+use zunyunkeji\payment\Exceptions\GatewayException;
+use zunyunkeji\payment\Helpers\ArrayUtil;
+use zunyunkeji\payment\Helpers\DataParser;
+use zunyunkeji\payment\Helpers\StrUtil;
+use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Supports\BaseObject;
+use zunyunkeji\payment\Supports\HttpRequest;
 
 /**
  * @package Payment\Gateways\Wechat

@@ -9,23 +9,23 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Proxies;
+namespace zunyunkeji\payment\Proxies;
 
 use InvalidArgumentException;
-use Payment\Contracts\IGatewayRequest;
-use Payment\Contracts\IPayNotify;
-use Payment\Contracts\IPayProxy;
-use Payment\Contracts\IQueryProxy;
-use Payment\Exceptions\GatewayException;
-use Payment\Gateways\CMBank\Bill;
-use Payment\Gateways\CMBank\BillRefund;
-use Payment\Gateways\CMBank\PublicKeyQuery;
-use Payment\Gateways\CMBank\Refund;
-use Payment\Gateways\CMBank\RefundQuery;
-use Payment\Gateways\CMBank\Settlement;
-use Payment\Gateways\CMBank\TradeQuery;
-use Payment\zunyunkeji\payment;
-use Payment\Supports\BaseObject;
+use zunyunkeji\payment\Contracts\IGatewayRequest;
+use zunyunkeji\payment\Contracts\IPayNotify;
+use zunyunkeji\payment\Contracts\IPayProxy;
+use zunyunkeji\payment\Contracts\IQueryProxy;
+use zunyunkeji\payment\Exceptions\GatewayException;
+use zunyunkeji\payment\Gateways\CMBank\Bill;
+use zunyunkeji\payment\Gateways\CMBank\BillRefund;
+use zunyunkeji\payment\Gateways\CMBank\PublicKeyQuery;
+use zunyunkeji\payment\Gateways\CMBank\Refund;
+use zunyunkeji\payment\Gateways\CMBank\RefundQuery;
+use zunyunkeji\payment\Gateways\CMBank\Settlement;
+use zunyunkeji\payment\Gateways\CMBank\TradeQuery;
+use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Supports\BaseObject;
 
 /**
  * @package Payment\Proxys

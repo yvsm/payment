@@ -9,29 +9,29 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Proxies;
+namespace zunyunkeji\payment\Proxies;
 
 use InvalidArgumentException;
-use Payment\Contracts\IGatewayRequest;
-use Payment\Contracts\IPayNotify;
-use Payment\Contracts\IPayProxy;
-use Payment\Contracts\IQueryProxy;
-use Payment\Contracts\ITransferProxy;
-use Payment\Exceptions\GatewayException;
-use Payment\Gateways\Wechat\Bill;
-use Payment\Gateways\Wechat\CancelTrade;
-use Payment\Gateways\Wechat\CloseTrade;
-use Payment\Gateways\Wechat\Notify;
-use Payment\Gateways\Wechat\Refund;
-use Payment\Gateways\Wechat\RefundQuery;
-use Payment\Gateways\Wechat\Settlement;
-use Payment\Gateways\Wechat\TradeQuery;
-use Payment\Gateways\Wechat\Transfer;
-use Payment\Gateways\Wechat\TransferBank;
-use Payment\Gateways\Wechat\TransferBankQuery;
-use Payment\Gateways\Wechat\TransferQuery;
-use Payment\zunyunkeji\payment;
-use Payment\Supports\BaseObject;
+use zunyunkeji\payment\Contracts\IGatewayRequest;
+use zunyunkeji\payment\Contracts\IPayNotify;
+use zunyunkeji\payment\Contracts\IPayProxy;
+use zunyunkeji\payment\Contracts\IQueryProxy;
+use zunyunkeji\payment\Contracts\ITransferProxy;
+use zunyunkeji\payment\Exceptions\GatewayException;
+use zunyunkeji\payment\Gateways\Wechat\Bill;
+use zunyunkeji\payment\Gateways\Wechat\CancelTrade;
+use zunyunkeji\payment\Gateways\Wechat\CloseTrade;
+use zunyunkeji\payment\Gateways\Wechat\Notify;
+use zunyunkeji\payment\Gateways\Wechat\Refund;
+use zunyunkeji\payment\Gateways\Wechat\RefundQuery;
+use zunyunkeji\payment\Gateways\Wechat\Settlement;
+use zunyunkeji\payment\Gateways\Wechat\TradeQuery;
+use zunyunkeji\payment\Gateways\Wechat\Transfer;
+use zunyunkeji\payment\Gateways\Wechat\TransferBank;
+use zunyunkeji\payment\Gateways\Wechat\TransferBankQuery;
+use zunyunkeji\payment\Gateways\Wechat\TransferQuery;
+use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Supports\BaseObject;
 
 /**
  * @package Payment\Proxys

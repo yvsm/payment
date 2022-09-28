@@ -9,16 +9,16 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Payment\Gateways\Alipay;
+namespace zunyunkeji\payment\Gateways\Alipay;
 
-use Payment\Exceptions\GatewayException;
-use Payment\Helpers\ArrayUtil;
-use Payment\Helpers\Rsa2Encrypt;
-use Payment\Helpers\RsaEncrypt;
-use Payment\Helpers\StrUtil;
-use Payment\zunyunkeji\payment;
-use Payment\Supports\BaseObject;
-use Payment\Supports\HttpRequest;
+use zunyunkeji\payment\Exceptions\GatewayException;
+use zunyunkeji\payment\Helpers\ArrayUtil;
+use zunyunkeji\payment\Helpers\Rsa2Encrypt;
+use zunyunkeji\payment\Helpers\RsaEncrypt;
+use zunyunkeji\payment\Helpers\StrUtil;
+
+use zunyunkeji\payment\Supports\BaseObject;
+use zunyunkeji\payment\Supports\HttpRequest;
 
 /**
  * @package Payment\Gateways\Alipay
