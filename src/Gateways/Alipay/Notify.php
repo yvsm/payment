@@ -12,7 +12,7 @@
 namespace zunyunkeji\payment\Gateways\Alipay;
 
 use zunyunkeji\payment\Exceptions\GatewayException;
-use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Payment;
 
 /**
  * @package Payment\Gateways\Alipay

@@ -15,7 +15,7 @@ use zunyunkeji\payment\Contracts\IGatewayRequest;
 use zunyunkeji\payment\Exceptions\GatewayException;
 use zunyunkeji\payment\Helpers\ArrayUtil;
 use zunyunkeji\payment\Helpers\StrUtil;
-use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Payment;
 
 /**
  * @package Payment\Gateways\Wechat

@@ -27,7 +27,7 @@ use zunyunkeji\payment\Gateways\Alipay\RefundQuery;
 use zunyunkeji\payment\Gateways\Alipay\TradeQuery;
 use zunyunkeji\payment\Gateways\Alipay\Transfer;
 use zunyunkeji\payment\Gateways\Alipay\TransferQuery;
-use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Payment;
 use zunyunkeji\payment\Supports\BaseObject;
 
 /**
@@ -74,7 +74,7 @@ class AlipayProxy extends BaseObject implements IPayProxy, IQueryProxy, ITransfe
     private function getChargeClass(string $channel)
     {
         $name = ucfirst(str_replace(['-', '_', ''], '', $channel));
-        return "Payment\\Gateways\\Alipay\\{$name}Charge";
+        return "zunyunkeji\\payment\\Gateways\\Alipay\\{$name}Charge";
     }
 
     /**

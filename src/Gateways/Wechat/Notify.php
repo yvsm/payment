@@ -14,7 +14,7 @@ namespace zunyunkeji\payment\Gateways\Wechat;
 use zunyunkeji\payment\Exceptions\GatewayException;
 use zunyunkeji\payment\Helpers\ArrayUtil;
 use zunyunkeji\payment\Helpers\DataParser;
-use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Payment;
 
 /**
  * @package Payment\Gateways\Wechat

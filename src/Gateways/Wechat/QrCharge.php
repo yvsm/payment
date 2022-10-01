@@ -13,7 +13,7 @@ namespace zunyunkeji\payment\Gateways\Wechat;
 
 use zunyunkeji\payment\Contracts\IGatewayRequest;
 use zunyunkeji\payment\Exceptions\GatewayException;
-use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Payment;
 
 /**
  * @package Payment\Gateways\Wechat

@@ -24,7 +24,7 @@ use zunyunkeji\payment\Gateways\CMBank\Refund;
 use zunyunkeji\payment\Gateways\CMBank\RefundQuery;
 use zunyunkeji\payment\Gateways\CMBank\Settlement;
 use zunyunkeji\payment\Gateways\CMBank\TradeQuery;
-use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Payment;
 use zunyunkeji\payment\Supports\BaseObject;
 
 /**
@@ -70,7 +70,7 @@ class CMBankProxy extends BaseObject implements IPayProxy, IQueryProxy
     private function getChargeClass(string $channel)
     {
         $name = ucfirst(str_replace(['-', '_', ''], '', $channel));
-        return "Payment\\Gateways\\CMBank\\{$name}Charge";
+        return "zunyunkeji\\payment\\Gateways\\CMBank\\{$name}Charge";
     }
 
     /**

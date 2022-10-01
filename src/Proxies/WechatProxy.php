@@ -30,7 +30,7 @@ use zunyunkeji\payment\Gateways\Wechat\Transfer;
 use zunyunkeji\payment\Gateways\Wechat\TransferBank;
 use zunyunkeji\payment\Gateways\Wechat\TransferBankQuery;
 use zunyunkeji\payment\Gateways\Wechat\TransferQuery;
-use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Payment;
 use zunyunkeji\payment\Supports\BaseObject;
 
 /**
@@ -76,7 +76,7 @@ class WechatProxy extends BaseObject implements IPayProxy, IQueryProxy, ITransfe
     private function getChargeClass(string $channel)
     {
         $name = ucfirst(str_replace(['-', '_', ''], '', $channel));
-        return "Payment\\Gateways\\Wechat\\{$name}Charge";
+        return "zunyunkeji\\payment\\Gateways\\Wechat\\{$name}Charge";
     }
 
     /**

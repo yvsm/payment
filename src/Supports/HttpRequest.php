@@ -37,6 +37,7 @@ trait HttpRequest
             'headers'     => $headers,
             'query'       => $query,
             'http_errors' => false,
+            'verify' => false
         ]);
     }
 
@@ -52,6 +53,7 @@ trait HttpRequest
             'headers'     => $headers,
             'form_params' => $params,
             'http_errors' => false,
+            'verify' => false
         ]);
     }
 
@@ -67,6 +69,7 @@ trait HttpRequest
             'headers'     => $headers,
             'json'        => $params,
             'http_errors' => false,
+            'verify' => false
         ]);
     }
 
@@ -82,6 +85,7 @@ trait HttpRequest
             'headers'     => $headers,
             'body'        => $xmlData,
             'http_errors' => false,
+            'verify' => false
         ]);
     }
 
@@ -98,6 +102,7 @@ trait HttpRequest
             'headers'     => $headers,
             'multipart'   => $formData,
             'http_errors' => false,
+            'verify' => false
         ]);
     }
 

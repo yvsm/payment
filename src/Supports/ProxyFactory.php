@@ -12,7 +12,7 @@
 namespace zunyunkeji\payment\Supports;
 
 use InvalidArgumentException;
-use zunyunkeji\payment\zunyunkeji\payment;
+use zunyunkeji\payment\Payment;
 
 /**
  * @package Payment\Supports
@@ -50,7 +50,7 @@ class ProxyFactory
     {
         $name = ucfirst(str_replace(['-', '_', ''], '', $proxyName));
 
-        return "Payment\\Proxies\\{$name}Proxy";
+        return "zunyunkeji\\payment\\Proxies\\{$name}Proxy";
     }
 
     /**
