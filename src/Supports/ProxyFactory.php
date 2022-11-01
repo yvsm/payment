@@ -50,7 +50,7 @@ class ProxyFactory
     {
         $name = ucfirst(str_replace(['-', '_', ''], '', $proxyName));
 
-        return "zunyunkeji\\payment\\Proxies\\{$name}Proxy";
+        return "\\zunyunkeji\\payment\\Proxies\\{$name}Proxy";
     }
 
     /**

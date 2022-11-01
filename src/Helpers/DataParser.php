@@ -65,7 +65,9 @@ class DataParser
 
         //将XML转为array
         //禁止引用外部xml实体
-        libxml_disable_entity_loader(true);
+        if (PHP_VERSION_ID < 80000) {
+            libxml_disable_entity_loader(true);
+        }
 
         $data = json_decode(json_encode(simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA)), true);
 

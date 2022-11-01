@@ -58,7 +58,7 @@ class RsaEncrypt
         }
 
         openssl_sign($data, $sign, $res);
-        openssl_free_key($res);
+        if (PHP_VERSION_ID < 80000) openssl_free_key($res);
 
         //base64编码
         $sign = base64_encode($sign);
@@ -92,7 +92,7 @@ class RsaEncrypt
             openssl_private_decrypt($data, $decrypt, $res);
             $result .= $decrypt;
         }
-        openssl_free_key($res);
+        if (PHP_VERSION_ID < 80000) openssl_free_key($res);
         return $result;
     }
 
@@ -113,7 +113,7 @@ class RsaEncrypt
         }
 
         $result = (bool) openssl_verify($data, base64_decode($sign), $res, OPENSSL_ALGO_SHA1);
-        openssl_free_key($res);
+        if (PHP_VERSION_ID < 80000) openssl_free_key($res);
         return $result;
     }
 }

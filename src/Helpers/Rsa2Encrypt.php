@@ -58,7 +58,7 @@ class Rsa2Encrypt
         }
 
         openssl_sign($data, $sign, $res, OPENSSL_ALGO_SHA256);
-        openssl_free_key($res);
+        if (PHP_VERSION_ID < 80000) openssl_free_key($res);
 
         //base64编码
         $sign = base64_encode($sign);
@@ -95,7 +95,7 @@ class Rsa2Encrypt
             $str .= $dcyCont;
         }
 
-        openssl_free_key($res);
+        if (PHP_VERSION_ID < 80000) openssl_free_key($res);
         return $str;
     }
 
@@ -116,7 +116,7 @@ class Rsa2Encrypt
         }
 
         $result = (bool) openssl_verify($data, base64_decode($sign), $res, OPENSSL_ALGO_SHA256);
-        openssl_free_key($res);
+        if (PHP_VERSION_ID < 80000) openssl_free_key($res);
         return $result;
     }
 }
